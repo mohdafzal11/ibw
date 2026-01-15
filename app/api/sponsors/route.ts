@@ -28,10 +28,10 @@ export async function GET(request: Request) {
     
     // Group by category (0: title, 1: platinum, 2: gold, 3: silver)
     const grouped = {
-      title: sponsors.filter(s => s.category === 0),
-      platinum: sponsors.filter(s => s.category === 1),
-      gold: sponsors.filter(s => s.category === 2),
-      silver: sponsors.filter(s => s.category === 3)
+      title: sponsors.filter((s: typeof sponsors[0]) => s.category === 0),
+      platinum: sponsors.filter((s: typeof sponsors[0]) => s.category === 1),
+      gold: sponsors.filter((s: typeof sponsors[0]) => s.category === 2),
+      silver: sponsors.filter((s: typeof sponsors[0]) => s.category === 3)
     }
     
     return NextResponse.json(grouped)
