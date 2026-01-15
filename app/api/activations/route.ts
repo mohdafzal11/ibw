@@ -30,14 +30,14 @@ export async function GET(request: Request) {
     })
     
     // Group by activation_event
-    const grouped = activations.reduce((acc: any, activation) => {
+    const grouped = activations.reduce((acc: any, activation: typeof activations[0]) => {
       const eventKey = activation.activationEvent || 0
       if (!acc[eventKey]) {
         acc[eventKey] = []
       }
       acc[eventKey].push(activation)
       return acc
-    }, {})
+    }, {} as Record<number, typeof activations>)
     
     return NextResponse.json(grouped)
   } catch (error) {

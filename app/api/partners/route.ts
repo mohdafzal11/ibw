@@ -27,7 +27,7 @@ export async function GET(request: Request) {
     })
     
     // Group by category and highlighter
-    const grouped = partners.reduce((acc: any, partner) => {
+    const grouped = partners.reduce((acc: any, partner: typeof partners[0]) => {
       const catKey = partner.category || 0
       if (!acc[catKey]) {
         acc[catKey] = {}
@@ -38,7 +38,7 @@ export async function GET(request: Request) {
       }
       acc[catKey][highlighterKey].push(partner)
       return acc
-    }, {})
+    }, {} as Record<number, Record<string, typeof partners>>)
     
     return NextResponse.json(grouped)
   } catch (error) {
