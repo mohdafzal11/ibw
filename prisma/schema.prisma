@@ -1,0 +1,299 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Admin Users (replacing Devise)
+model AdminUser {
+  id                     Int       @id @default(autoincrement())
+  email                  String    @unique @default("")
+  encryptedPassword      String    @default("") @map("encrypted_password")
+  resetPasswordToken     String?   @unique @map("reset_password_token")
+  resetPasswordSentAt    DateTime? @map("reset_password_sent_at")
+  rememberCreatedAt      DateTime? @map("remember_created_at")
+  createdAt              DateTime  @default(now()) @map("created_at")
+  updatedAt              DateTime  @updatedAt @map("updated_at")
+
+  @@map("admin_users")
+}
+
+// Speakers
+model Speaker {
+  id                Int      @id @default(autoincrement())
+  name              String
+  company           String
+  position          String?
+  twitter           String?
+  linkedin          String?
+  imageUrl          String?  @map("image_url")
+  order             Int?
+  addToHome         Boolean  @default(true) @map("add_to_home")
+  addToBanner       Boolean? @map("add_to_banner")
+  addToDemodayPage  Boolean? @map("add_to_demoday_page")
+  pastSpeaker       Boolean? @map("past_speaker")
+  year              Int      @default(0)
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("speakers")
+}
+
+// Agendas
+model Agenda {
+  id              Int       @id @default(autoincrement())
+  agendaDate      DateTime? @db.Date @map("agenda_date")
+  stageName       String?   @map("stage_name")
+  startTime       DateTime? @db.Time @map("start_time")
+  endTime         DateTime? @db.Time @map("end_time")
+  eventName       String?   @map("event_name")
+  eventDescription String? @map("event_description")
+  hostName        String?   @map("host_name")
+  hostPosition    String?   @map("host_position")
+  addToHome       Boolean   @default(true) @map("add_to_home")
+  year            Int       @default(0)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("agendas")
+}
+
+// Sponsors
+model Sponser {
+  id                Int      @id @default(autoincrement())
+  title             String?
+  description      String?
+  category         Int?
+  order            Int       @default(1)
+  websiteUrl       String?   @map("website_url")
+  addToDemodayPage Boolean  @default(false) @map("add_to_demoday_page")
+  year             Int       @default(0)
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("sponsers")
+}
+
+// Partners
+model Partner {
+  id                Int      @id @default(autoincrement())
+  name              String?
+  companyName       String?   @map("company_name")
+  category          Int?
+  order             Int?
+  websiteUrl        String?   @map("website_url")
+  highlighter       Boolean?
+  addToDemodayPage  Boolean  @default(false) @map("add_to_demoday_page")
+  year              Int       @default(0)
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("partners")
+}
+
+// Activations
+model Activation {
+  id              Int       @id @default(autoincrement())
+  activationEvent Int?      @map("activation_event")
+  informationText String?   @map("information_text")
+  imageText       String?   @map("image_text")
+  registerUrl     String?   @map("register_url")
+  profileUrl      String?   @map("profile_url")
+  eventDate       DateTime? @db.Date @map("event_date")
+  startTime       DateTime? @db.Time @map("start_time")
+  endTime         DateTime? @db.Time @map("end_time")
+  order           Int       @default(1)
+  year            Int       @default(0)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  companyImages   CompanyImage[]
+
+  @@index([year])
+  @@map("activations")
+}
+
+// Company Images
+model CompanyImage {
+  id           Int        @id @default(autoincrement())
+  activationId Int        @map("activation_id")
+  activation   Activation @relation(fields: [activationId], references: [id], onDelete: Cascade)
+
+  @@index([activationId])
+  @@map("company_images")
+}
+
+// Schedules
+model Schedule {
+  id        Int          @id @default(autoincrement())
+  startDate DateTime?    @db.Date @map("start_date")
+  endDate   DateTime?    @db.Date @map("end_date")
+  startTime DateTime?    @db.Time @map("start_time")
+  endTime   DateTime?    @db.Time @map("end_time")
+  venue     String?
+  year      Int          @default(0)
+  createdAt DateTime     @default(now()) @map("created_at")
+  updatedAt DateTime     @updatedAt @map("updated_at")
+  eventPoints EventPoint[]
+
+  @@index([year])
+  @@map("schedules")
+}
+
+// Event Points
+model EventPoint {
+  id         Int       @id @default(autoincrement())
+  point      String?
+  scheduleId Int       @map("schedule_id")
+  schedule   Schedule  @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
+
+  @@index([scheduleId])
+  @@map("event_points")
+}
+
+// Side Events
+model SideEvent {
+  id              Int       @id @default(autoincrement())
+  title           String?
+  category        Int?
+  smallDescription String?  @map("small_description")
+  badge           String?
+  inviteMode      Int?      @map("invite_mode")
+  sideventDate    DateTime? @db.Date @map("sidevent_date")
+  startTime       DateTime? @db.Time @map("start_time")
+  endTime         DateTime? @db.Time @map("end_time")
+  location        String?
+  websiteUrl      String?   @map("website_url")
+  calendarUrl     String?   @map("calendar_url")
+  sideventBanner  Boolean   @default(false) @map("sidevent_banner")
+  year            Int       @default(0)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("side_events")
+}
+
+// Demoday Statistics
+model DemodayStatistic {
+  id               Int      @id @default(autoincrement())
+  partnersCount    Int?     @map("partners_count")
+  applicationsCount Int?    @map("applications_count")
+  pitchesCount     Int?     @map("pitches_count")
+  year             Int      @default(0)
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("demoday_statistics")
+}
+
+// Hackathons
+model Hackathon {
+  id          Int      @id @default(autoincrement())
+  title       String?
+  description String?
+  price       String?
+  order       Int      @default(1)
+  year        Int      @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("hackathons")
+}
+
+// Hackathon Statistics
+model HackathonStatistic {
+  id            Int      @id @default(autoincrement())
+  partnersCount Int?      @map("partners_count")
+  devsCount     Int?      @map("devs_count")
+  bountiesCount Int?      @map("bounties_count")
+  year          Int       @default(0)
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("hackathon_statistics")
+}
+
+// Locations
+model Location {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  email     String?
+  position  Int?
+  latitude  Float?
+  longitude Float?
+  year      Int       @default(0)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("locations")
+}
+
+// Replay Contents
+model ReplayContent {
+  id          Int      @id @default(autoincrement())
+  twitterUrl  String?  @map("twitter_url")
+  description String?
+  tag         String?
+  readUrl     String?  @map("read_url")
+  order       Int      @default(1)
+  year        Int      @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("replay_contents")
+}
+
+// Request Proofs
+model RequestProof {
+  id         Int      @id @default(autoincrement())
+  sessionId  String?  @map("session_id")
+  otherField Json?    @default("{}") @map("other_field")
+  year       Int      @default(0)
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("request_proofs")
+}
+
+// Speaker Banners
+model SpeakerBanner {
+  id          Int      @id @default(autoincrement())
+  title       String?
+  description String?
+  year        Int      @default(0)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([year])
+  @@map("speaker_banners")
+}
+
+// User Details
+model UserDetail {
+  id        Int      @id @default(autoincrement())
+  email     String?
+  name      String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("user_details")
+}
+
+// Note: Active Storage tables (active_storage_attachments, active_storage_blobs, active_storage_variant_records)
+// and Action Text (action_text_rich_texts) are not included as they're Rails-specific.
+// File handling will be migrated to a different solution (local storage or cloud storage).

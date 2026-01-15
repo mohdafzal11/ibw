@@ -1,0 +1,24 @@
+<svg width="311" height="72" viewBox="0 0 311 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_110_44967" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="311" height="72">
+<rect width="310.199" height="72" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_110_44967)">
+<g filter="url(#filter0_f_110_44967)">
+<ellipse cx="159.008" cy="89.5" rx="132.359" ry="33.5" fill="url(#paint0_linear_110_44967)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_110_44967" x="-11.6094" y="17.7412" width="341.236" height="143.518" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="19.1294" result="effect1_foregroundBlur_110_44967"/>
+</filter>
+<linearGradient id="paint0_linear_110_44967" x1="20.5" y1="75.5" x2="312" y2="75.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF42F"/>
+<stop offset="0.253472" stop-color="#FFA232"/>
+<stop offset="0.486071" stop-color="#F450B2"/>
+<stop offset="0.718669" stop-color="#3FCBFF"/>
+<stop offset="1" stop-color="#D0D81D"/>
+</linearGradient>
+</defs>
+</svg>
