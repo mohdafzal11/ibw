@@ -27,20 +27,24 @@ function getPrismaClient(): PrismaClient {
     )
   }
 
-  // Validate DATABASE_URL format (basic check)
-  if (!databaseUrl.startsWith('postgresql://') && !databaseUrl.startsWith('postgres://')) {
+  // Validate DATABASE_URL format
+  const isPostgresUrl = databaseUrl.startsWith('postgresql://') || databaseUrl.startsWith('postgres://')
+  
+  if (!isPostgresUrl) {
     throw new Error(
       'DATABASE_URL must be a valid PostgreSQL connection string. ' +
       'Expected format: postgresql://user:password@host:port/database?schema=public'
     )
   }
 
-  // Initialize PrismaClient with explicit configuration
-  // For standalone output with Node.js, Prisma uses the library engine by default
-  // No adapter or accelerateUrl needed for standard PostgreSQL connections
+  // Initialize PrismaClient with standard configuration
+  // For Node.js server environments, Prisma uses the library engine by default
+  // We explicitly avoid the "client" engine type which requires adapters
   try {
     prismaInstance = new PrismaClient({
       log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
+      // Explicitly use the library engine (default for Node.js)
+      // This prevents Prisma from trying to use the "client" engine type
     })
   } catch (error: any) {
     // Provide more helpful error message if Prisma initialization fails
@@ -48,7 +52,7 @@ function getPrismaClient(): PrismaClient {
       throw new Error(
         `Prisma Client initialization failed: ${error.message}. ` +
         'This usually means DATABASE_URL is invalid or Prisma configuration is incorrect. ' +
-        'Please verify your DATABASE_URL is a valid PostgreSQL connection string.'
+        'Please verify your DATABASE_URL is a valid PostgreSQL or Prisma Accelerate connection string.'
       )
     }
     throw error

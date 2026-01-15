@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import SocialIcons from "@/components/SocialIcons";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://indiablockchainweek.com'),
   title: "India Blockchain Week Conference",
   description: "Stay tuned for the IBW2025 Conference – Accelerating India's Digital Renaissance. Join us at the Sheraton Grand, Bangalore on December 2-3, 2025. Hosted by Hashed Emergent. Tickets coming soon!",
   keywords: "IBW'24 Conference, IBW'24, India Blockchain Week, Blockchain Event India, India, Blockchain Industry, Developers, Blockchain, Crypto event India, IBW, Web3 Event, Web3 India, Hashed Emergent, Hashed EM, Hashed, IBW 2023, IBW2025 Conference, IBW2025, India Blockchain Week, Blockchain Event India, India, Blockchain Industry, Developers, Blockchain, Crypto event India, IBW, Web3 Event, Web3 India, Hashed Emergent, Hashed EM, Hashed, IBW2025, Sheraton Grand, Multichain Conference",
