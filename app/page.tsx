@@ -15,6 +15,8 @@ import FAQ from '@/components/sections/FAQ'
 import { prisma } from '@/lib/prisma'
 
 export const dynamic = 'force-dynamic'
+// Ensure this page runs on Node.js runtime (not edge) since Prisma requires Node.js
+export const runtime = 'nodejs'
 
 export default async function Home() {
   // Fetch all data in parallel using direct Prisma queries
