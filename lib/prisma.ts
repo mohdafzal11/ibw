@@ -4,25 +4,6 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
 }
 
-// Get DATABASE_URL, with fallback for build time
-function getDatabaseUrl(): string {
-  // During build, if DATABASE_URL is not set, use a dummy URL
-  // This allows Prisma to initialize during build without errors
-  // At runtime, this will fail if DATABASE_URL is not actually set
-  if (!process.env.DATABASE_URL) {
-    if (process.env.NEXT_PHASE === 'phase-production-build' || 
-        (process.env.NODE_ENV === 'production' && typeof window === 'undefined')) {
-      // Build time: use dummy URL to satisfy Prisma initialization
-      return 'postgresql://user:password@localhost:5432/dbname?schema=public'
-    }
-    throw new Error(
-      'DATABASE_URL environment variable is not set. ' +
-      'Please set it in your .env file or environment variables.'
-    )
-  }
-  return process.env.DATABASE_URL
-}
-
 // Lazy initialization to prevent build-time errors
 let prismaInstance: PrismaClient | null = null
 
@@ -36,21 +17,41 @@ function getPrismaClient(): PrismaClient {
     return prismaInstance
   }
 
-  // Set DATABASE_URL temporarily for Prisma initialization if not set
-  const originalUrl = process.env.DATABASE_URL
-  if (!process.env.DATABASE_URL) {
-    process.env.DATABASE_URL = getDatabaseUrl()
+  // Ensure DATABASE_URL is set and valid at runtime
+  const databaseUrl = process.env.DATABASE_URL
+  if (!databaseUrl) {
+    throw new Error(
+      'DATABASE_URL environment variable is not set. ' +
+      'Please set it in your .env file or environment variables. ' +
+      'Example: DATABASE_URL="postgresql://user:password@localhost:5432/dbname?schema=public"'
+    )
   }
 
+  // Validate DATABASE_URL format (basic check)
+  if (!databaseUrl.startsWith('postgresql://') && !databaseUrl.startsWith('postgres://')) {
+    throw new Error(
+      'DATABASE_URL must be a valid PostgreSQL connection string. ' +
+      'Expected format: postgresql://user:password@host:port/database?schema=public'
+    )
+  }
+
+  // Initialize PrismaClient with explicit configuration
+  // For standalone output with Node.js, Prisma uses the library engine by default
+  // No adapter or accelerateUrl needed for standard PostgreSQL connections
   try {
     prismaInstance = new PrismaClient({
       log: process.env.NODE_ENV === 'development' ? ['query', 'error', 'warn'] : ['error'],
     })
-  } finally {
-    // Restore original DATABASE_URL if we temporarily set it
-    if (!originalUrl) {
-      delete process.env.DATABASE_URL
+  } catch (error: any) {
+    // Provide more helpful error message if Prisma initialization fails
+    if (error.message?.includes('engine type') || error.message?.includes('adapter') || error.message?.includes('accelerateUrl')) {
+      throw new Error(
+        `Prisma Client initialization failed: ${error.message}. ` +
+        'This usually means DATABASE_URL is invalid or Prisma configuration is incorrect. ' +
+        'Please verify your DATABASE_URL is a valid PostgreSQL connection string.'
+      )
     }
+    throw error
   }
 
   if (process.env.NODE_ENV !== 'production') {
