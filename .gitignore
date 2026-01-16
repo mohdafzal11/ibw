@@ -42,3 +42,5 @@ next-env.d.ts
 
 /app/generated/prisma
 
+# Large video files (over 100MB)
+public/assets/images/2025/lighlight_2025.mp4
