@@ -7,8 +7,8 @@ export default function ConfHighlight() {
         <div className="mainTitle text-center">
           <h2 className="themeTitle">
             Highlights of IBW2024 Conference
-            <div className="outerBorder">
-              <Image src="/assets/images/2025/border-bottom.svg" alt="img" width={200} height={20} loading="lazy" />
+            <div className="outerBorder" style={{ display: 'flex', justifyContent: 'center' }}>
+              <img src="/assets/images/2025/border-bottom.svg" alt="img" style={{ maxWidth: '100%' }} loading="lazy" />
             </div>
           </h2>
         </div>
