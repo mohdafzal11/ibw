@@ -59,7 +59,7 @@ export default function Highlights() {
                     playsInline
                     disablePictureInPicture
                     preload="metadata"
-                    style={{ width: '100%', height: '100%' }}
+                    style={{ maxWidth: '100%', maxHeight: '100%', minWidth: '100%', width: '100%', height: '100%' }}
                   >
                     <source src="/assets/images/2025/lighlight_2025.mp4" type="video/mp4" />
                   </video>

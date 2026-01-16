@@ -1839,7 +1839,7 @@ body {
     position: absolute;
     right: -200px;
     top: -380px;
-    background: url("2025/font-bg.svg");
+    background: url("/assets/images/2025/font-bg.svg");
     width: 863px;
     height: 900px;
     background-size: cover;
