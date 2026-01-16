@@ -11,7 +11,7 @@ export default function PastSponsors() {
           <h2 className="themeTitle">
             PAST Sponsors
             <div className="outerBorder" style={{ display: 'grid' }}>
-              <Image src="/assets/images/2025/border-bottom.svg" alt="img" width={200} height={20} loading="lazy" />
+            <img src="/assets/images/2025/border-bottom.svg" alt="img" style={{ maxWidth: '100%' }} loading="lazy" />
             </div>
           </h2>
         </div>

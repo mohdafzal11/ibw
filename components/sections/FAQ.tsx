@@ -1,5 +1,7 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 export default function FAQ() {
   const faqs = [
@@ -94,18 +96,41 @@ export default function FAQ() {
     }
   ]
 
+  useEffect(() => {
+    const handleShown = (e: Event) => {
+      const target = e.target as HTMLElement
+      if (target.classList.contains('accordion-collapse')) {
+        target.style.height = 'auto'
+        const body = target.querySelector('.accordion-body') as HTMLElement
+        if (body) {
+          body.style.display = 'block'
+          body.style.visibility = 'visible'
+          body.style.opacity = '1'
+        }
+      }
+    }
+
+    const accordion = document.getElementById('faqAccordion')
+    if (accordion) {
+      accordion.addEventListener('shown.bs.collapse', handleShown)
+      return () => {
+        accordion.removeEventListener('shown.bs.collapse', handleShown)
+      }
+    }
+  }, [])
+
   return (
     <section className="faqSection padder-15" id="faq">
-      <div className="container-lg">
-        <div className="mainTitle text-center">
-          <h2 className="themeTitle">
-            FAQs
-            <div className="outerBorder" style={{ display: 'grid' }}>
-              <Image src="/assets/images/2025/border-bottom.svg" alt="img" width={200} height={20} loading="lazy" />
-            </div>
-          </h2>
-        </div>
-        <div className="accordion" id="faqAccordion">
+        <div className="container-lg">
+          <div className="mainTitle text-center">
+            <h2 className="themeTitle">
+              FAQs
+              <div className="outerBorder" style={{ display: 'grid' }}>
+                <img src="/assets/images/2025/border-bottom.svg" alt="img" style={{ maxWidth: '100%' }} loading="lazy" />
+              </div>
+            </h2>
+          </div>
+          <div className="accordion" id="faqAccordion">
           {faqs.map((faq) => (
             <div key={faq.id} className="accordion-item">
               <h2 className="accordion-header" id={faq.heading}>
@@ -119,7 +144,7 @@ export default function FAQ() {
                 >
                   <div className="innerHeading">{faq.question}</div>
                   <span className="icon">
-                    <Image src="/assets/images/2025/down-icon.svg" alt="img" width={20} height={20} loading="lazy" />
+                    <img src="/assets/images/2025/down-icon.svg" alt="img" width={20} height={20} loading="lazy" />
                   </span>
                 </button>
               </h2>

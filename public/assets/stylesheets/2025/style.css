@@ -2267,6 +2267,7 @@ body {
     border-bottom: dashed 2px #4b4b4b;
     background-color: transparent;
     border-radius: 0px;
+    overflow: visible;
 }
 
 .faqSection .accordion .accordion-button {
@@ -2281,6 +2282,7 @@ body {
     letter-spacing: -0.4px;
     padding: 5px 0px;
     transition: 0.5s;
+    overflow: visible;
 }
 
 .faqSection .accordion .accordion-button.collapsed .innerHeading {
@@ -2289,7 +2291,13 @@ body {
     transition: 0.5s;
 }
 
+.faqSection .accordion .accordion-button {
+    position: relative;
+    overflow: visible;
+}
+
 .faqSection .accordion .accordion-button .innerHeading {
+    position: relative;
     padding: 10px 25px;
     border-radius: 27px;
     background: linear-gradient(112deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
@@ -2307,12 +2315,21 @@ body {
     left: -8px;
     width: 20px;
     height: 20px;
-    background: url("2025/left-icon.png");
+    background: url("/assets/images/2025/left-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
     top: 0px;
     bottom: 0;
     margin: auto;
-    background-size: cover;
+    background-size: contain;
     transition: 0.5s;
+    opacity: 1;
+    z-index: 10;
+    display: block;
+}
+
+.faqSection .accordion .accordion-button:not(.collapsed) .innerHeading::after {
+    opacity: 1;
 }
 
 .faqSection .accordion .accordion-button .icon {
@@ -2324,22 +2341,101 @@ body {
     transform: rotate(-180deg);
 }
 
+.faqSection .accordion .accordion-button.collapsed .icon {
+    transform: rotate(0deg);
+}
+
 .faqSection .accordion .accordion-button::after {
     display: none;
 }
 
+.faqSection .accordion .accordion-collapse {
+    overflow: visible;
+}
+
+.faqSection .accordion .accordion-collapse:not(.show) {
+    display: none;
+}
+
+.faqSection .accordion .accordion-collapse.collapsing {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+.faqSection .accordion .accordion-collapse.collapsing .accordion-body {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+}
+
+.faqSection .accordion .accordion-collapse.collapsing .accordion-body .smallText {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #e3e3e3 !important;
+}
+
+.faqSection .accordion .accordion-collapse.show {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    min-height: 1px !important;
+    overflow: visible !important;
+    max-height: none !important;
+}
+
+.faqSection .accordion .accordion-collapse.show[style*="height"] {
+    height: auto !important;
+}
+
+.faqSection .accordion .accordion-collapse.show .accordion-body {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+
 .faqSection .accordion .accordion-body {
     padding: 15px 0px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.faqSection .accordion .accordion-collapse.show .accordion-body,
+.faqSection .accordion .accordion-collapse.show .accordion-body * {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.faqSection .accordion .accordion-collapse:not(.collapsing).show {
+    transition: none !important;
+}
+
+.faqSection .accordion .accordion-collapse.show[style] {
+    height: auto !important;
 }
 
 .faqSection .accordion .accordion-body .smallText {
-    color: #e3e3e3;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #e3e3e3 !important;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.8px;
     margin-bottom: 15px;
+    position: relative !important;
 }
 
 .faqSection .accordion .accordion-body .smallText a {

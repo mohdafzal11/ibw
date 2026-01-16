@@ -9,7 +9,7 @@ export default function ApplyForIBW25() {
           <h2 className="themeTitle">
             Apply For IBW2025
             <div className="outerBorder" style={{ display: 'grid' }}>
-              <Image src="/assets/images/2025/border-bottom.svg" alt="img" width={200} height={20} loading="lazy" />
+              <img src="/assets/images/2025/border-bottom.svg" alt="img" style={{ maxWidth: '100%' }} loading="lazy" />
             </div>
           </h2>
           <div className="outerBorder"></div>
