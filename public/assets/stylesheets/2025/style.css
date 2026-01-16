@@ -1921,7 +1921,7 @@ body {
     width: auto;
     height: 100%;
     background-repeat: no-repeat;
-    background-image: url('2025/overview-banner.svg');
+    background-image: url('/assets/images/2025/overview-banner.svg');
 }
 
 .ibw2024-overview .cardTheme {
@@ -1937,17 +1937,17 @@ body {
 }
 
 .ibw2024-overview .cardTheme:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -1px;
-    border-radius: inherit;
-    background: transparent;
-    transition: 0.5s;
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: -1 !important;
+    margin: -1px !important;
+    border-radius: inherit !important;
+    background: transparent !important;
+    transition: 0.5s !important;
 }
 
 .ibw2024-overview .first-card .cardTheme .card-body {
@@ -1978,7 +1978,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("2025/new-shadow-1.svg");
+    background-image: url("/assets/images/2025/new-shadow-1.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -1991,19 +1991,19 @@ body {
 }
 
 .ibw2024-overview .first-card .cardTheme::after {
-    background-image: url("2025/new-shadow-1.svg");
+    background-image: url("/assets/images/2025/new-shadow-1.svg");
 }
 
 .ibw2024-overview .sec-card .cardTheme::after {
-    background-image: url("2025/new-shadow-2.svg");
+    background-image: url("/assets/images/2025/new-shadow-2.svg");
 }
 
 .ibw2024-overview .thired-card .cardTheme::after {
-    background-image: url("2025/new-shadow-3.svg");
+    background-image: url("/assets/images/2025/new-shadow-3.svg");
 }
 
 .ibw2024-overview .four-card .cardTheme::after {
-    background-image: url("2025/new-shadow-4.svg");
+    background-image: url("/assets/images/2025/new-shadow-4.svg");
 }
 
 .ibw2024-overview .cardTheme:hover {
@@ -2011,8 +2011,8 @@ body {
 }
 
 .ibw2024-overview .cardTheme:hover:before {
-    transition: 0.5s;
-    background: linear-gradient(to right, #63b5b6 0%, #6288c0 25%, #916a86 50%, #cab85c 75%, #69ad5b 100%);
+    transition: 0.5s !important;
+    background: linear-gradient(to right, #63b5b6 0%, #6288c0 25%, #916a86 50%, #cab85c 75%, #69ad5b 100%) !important;
 }
 
 .ibw2024-overview .cardTheme:hover::after {
