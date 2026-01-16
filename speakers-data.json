@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Rahul Sanskrityayan",
+    "info": "Specialist Consultant Blockchain  | NPCI",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aca6af1bd75e5d7643e62851ebeed3e993b598c3/rahul%20.png",
+    "companyUrl": "",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/rahul-sanskrityayan/"
+  },
+  {
+    "name": "Balamurugan Veeraswamy",
+    "info": "Head Blockchain  | National Payments Corporation of India ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcG9DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c49fa6e31fc12946c44b65060897ae12b5a9d8f0/um.png",
+    "companyUrl": "https://www.npci.org.in/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Prasanna Sankar",
+    "info": "Prev. Co-Founded Rippling.com, 0xPPL.com; Angel Investor | 0xPPL",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b97b077db0d4323a360b38cc11fe543e30dd8b25/prasana.png",
+    "companyUrl": "https://0xppl.com",
+    "twitter": "https://x.com/myprasanna",
+    "linkedin": "https://www.linkedin.com/in/myprasanna/"
+  },
+  {
+    "name": "Vikram Barandwal",
+    "info": "Investment Analyst | Hashed Emergent ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcHdDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--be2d9371352e4eb68adb0c0ecd5f15fab0c3c689/vikram.png",
+    "companyUrl": "https://hashedem.com/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Shankar Jayaraman",
+    "info": "SVP | Jio",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDhDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--da7f027e444f3a826baada9c0dc0b3daea85156c/jio.png",
+    "companyUrl": "",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/jshankaar/"
+  },
+  {
+    "name": "Sreeram Kannan",
+    "info": "CEO | Eigen Labs",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb29CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6407f22e2aae650baa9f094497c0befec2b3a742/sk.png",
+    "companyUrl": "https://www.eigencloud.xyz/",
+    "twitter": "https://x.com/sreeramkannan",
+    "linkedin": "https://www.linkedin.com/in/sreeram-kannan-a397a47/"
+  },
+  {
+    "name": "Avery Ching",
+    "info": "Co-Founder & CEO | Aptos Labs ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2445a4539c5e5cea9edc305a6780cfa475b67490/sadsd.png",
+    "companyUrl": "https://aptosfoundation.org/",
+    "twitter": "https://x.com/AveryChing",
+    "linkedin": "https://www.linkedin.com/in/averyching/"
+  },
+  {
+    "name": "Shri. Priyank M Kharge",
+    "info": "Minister of Electronics, Information Technology & Biotechnology and Rural Development & Panchayat Raj | Govt. of Karnataka",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbGNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a40ebe58fa6b979614b0bd5e711b07c30c3d81c/minister.png",
+    "companyUrl": "",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "SB Seker",
+    "info": "Head of APAC | Binance",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbFlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1443eb6f3f874a50589ad06b1788e23a2bbe0331/wdwd.png",
+    "companyUrl": "https://www.binance.com/en",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "John O'Loghlen",
+    "info": "APAC Managing Director | Coinbase",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--77f273b211b8a0b38a2cdd85128ab0fdb8d5966b/wdwdwd.png",
+    "companyUrl": "https://www.coinbase.com/",
+    "twitter": "https://x.com/JohnOLoghlen",
+    "linkedin": "https://www.linkedin.com/in/john-o-loghlen-b25494b/?originalSubdomain=au"
+  },
+  {
+    "name": "Ashish Singhal",
+    "info": "Co-founder | CoinSwitch",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbHNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3b693bd23e179430a623e5ea3306ade20a648cc4/uyg.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/ashish343?s=21",
+    "linkedin": "https://www.linkedin.com/in/ashish-singhal-peepalco/"
+  },
+  {
+    "name": "Devika Mittal",
+    "info": "Head of South Asia | Ava Labs ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2859acc6f13b2e4609ac44d0ece47b0bdd43fa5d/dm.png",
+    "companyUrl": "https://www.avax.network/about/foundation",
+    "twitter": "https://x.com/MittalDevika",
+    "linkedin": "https://www.linkedin.com/in/devikamittal/"
+  },
+  {
+    "name": "Sebastien Borget",
+    "info": "Co-Founder & Ambassador | The Sandbox and SANDchain",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcEVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b25fa5a62a763894a21239632b0ab7c4cb6b73b1/sebastionb.png",
+    "companyUrl": "https://www.sandbox.game/en/",
+    "twitter": "https://x.com/borgetsebastien",
+    "linkedin": "https://www.linkedin.com/in/borgetsebastien"
+  },
+  {
+    "name": "Yusuf Goolamabbas",
+    "info": "CKO | Animoca Brands",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d23df30a8470c77339e1ae47b9e9516ab30a1739/esgdg.png",
+    "companyUrl": "https://www.animocabrands.com/",
+    "twitter": "https://x.com/yusufg",
+    "linkedin": "https://www.linkedin.com/in/yusufg/?originalSubdomain=hk"
+  },
+  {
+    "name": "Michael Louzado",
+    "info": "EVP Strategy & M&A | Ledger",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9f1082e2c27a1cebbf1277cc8f9d6eff932ab8f8/idk%201.png",
+    "companyUrl": "https://www.ledger.com/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/michael-l-b13a8a5"
+  },
+  {
+    "name": "Rik Krieger",
+    "info": "COO | Trust Wallet",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5ae43cee614c0db725ac4f9f41ad0d88af81b60e/csdsdds.png",
+    "companyUrl": "https://trustwallet.com/",
+    "twitter": "https://x.com/rikzrh?lang=en",
+    "linkedin": "https://www.linkedin.com/in/rikkrieger/"
+  },
+  {
+    "name": "Deepthi Kumar",
+    "info": "Co - CEO | o1Labs / Mina Protocol ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--faddf8e7e68c5101c6c4db6118418d89ee15f026/deepthi%201.png",
+    "companyUrl": "https://minaprotocol.com/",
+    "twitter": "https://x.com/deepthiskumar8?s=20",
+    "linkedin": "https://www.linkedin.com/in/deepthi-s-kumar-229060b7/"
+  },
+  {
+    "name": "Nikhil Joshi",
+    "info": "COO | EMURGO",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcm9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9da9b7be5824413cf5bec22e2c15b9155fad2753/.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/No3of3J",
+    "linkedin": "https://www.linkedin.com/in/nikhil-joshi-sgp/"
+  },
+  {
+    "name": "Ignacio Franco",
+    "info": "Chief Marketing Officer | Bitget",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4e3d6cd319e2fa9b731e049324c3ca670187161b/23dwd.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/ignaciobitget",
+    "linkedin": "https://www.linkedin.com/in/ignacioaguirrefranco/?originalSubdomain=lu"
+  },
+  {
+    "name": "Kanny Lee",
+    "info": "CEO & Co-founder | SecondSwap",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6a05d8e09d7de9ced8d521ab655a687d7f4ba502/kanny%20lee%201.png",
+    "companyUrl": "https://www.secondswap.io/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/kannylee?originalSubdomain=sg"
+  },
+  {
+    "name": "Mark Rydon",
+    "info": "Co Founder and CSO | Aethir",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcElCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--53d3098227b25a267c945f3544584aa254a42e04/sdsds.png",
+    "companyUrl": "https://aethir.com/",
+    "twitter": "https://x.com/MRRydon",
+    "linkedin": "https://www.linkedin.com/in/markrydon/"
+  },
+  {
+    "name": "Queenie Le",
+    "info": "Regional Expansion Lead APAC | Tether ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--999bcf4cb1aa465ea4124016833019d35d28a8b4/le%201.png",
+    "companyUrl": "https://tether.to/en/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/quynh218/"
+  },
+  {
+    "name": "Siddarth Bharwani",
+    "info": "JMD & CFO | Jetking Infotrain limited",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--905e061d47c83c4b59519a9aef6466e73a248b9f/dsfasfd.png",
+    "companyUrl": "https://www.jetking.com/",
+    "twitter": "https://x.com/sidbharwani",
+    "linkedin": "https://in.linkedin.com/in/mrbharwani"
+  },
+  {
+    "name": "Aytunc Yildizli",
+    "info": "Chief Growth Officer  | Zero Gravity (0G)",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbUFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--03b33cf669de3694e096cb46bc86d71971a551f8/ayntuc%201%201.png",
+    "companyUrl": "https://0g.ai/",
+    "twitter": "https://x.com/AytuncYildizli?s=20",
+    "linkedin": "https://www.linkedin.com/in/aytun%C3%A7-y%C4%B1ld%C4%B1zl%C4%B1-317533169"
+  },
+  {
+    "name": "Augie Ilag",
+    "info": "Investment Partner and Head of Asia | CMT Digital ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e089ae564952ac2e20f5f22d0069b6c7400fb2bf/sdsd.png",
+    "companyUrl": "https://cmt.digital/",
+    "twitter": "https://x.com/AugieIlag",
+    "linkedin": "https://www.linkedin.com/in/aug78b4a431/"
+  },
+  {
+    "name": "Siddharth Shetty",
+    "info": "CEO | Finternet Labs",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--30aec07d454c379319f3940ea58b3f155e3a32df/gc69Vb--6_BGJthwCIKj7QkZ-VT6isPjyxx434JMGRk-Photoroom%20(3)%201.png",
+    "companyUrl": "https://finternetlab.io/",
+    "twitter": "https://x.com/imsiddshetty",
+    "linkedin": "https://in.linkedin.com/in/siddharth-shetty-b76434285"
+  },
+  {
+    "name": "Aditi Chopra",
+    "info": "Regional Growth, India | Arbitrum Foundation",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--60ccb19f530ec46986557d249913dc335a82500e/aditi%20chop%201.png",
+    "companyUrl": "https://arbitrum.foundation/",
+    "twitter": "https://x.com/aditichoprax?s=20",
+    "linkedin": "https://www.linkedin.com/in/aditichoprax/"
+  },
+  {
+    "name": "Dr. Prakash Kamaraj",
+    "info": "DeCharge | CoFounder & Chief of Growth",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ef9e042df2dc650977093d1d0d16be5aebbc2e9c/bs.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/DoctorPrk",
+    "linkedin": "https://www.linkedin.com/in/drprk/"
+  },
+  {
+    "name": "BIBHU PATTNAIK",
+    "info": "Editor / Sr. Writer | BENZINGA",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaG9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e28183b0a1d5a0d632d4fb6704bc571fa77adfd6/bibhu%201.png",
+    "companyUrl": "https://www.benzinga.com/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "GEORGE ANTHONY",
+    "info": "CEO | BULLBIT",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--32bc7a7ebb983661c7293936ae5fcc817d4ab1b1/antony.png",
+    "companyUrl": "https://www.bullbit.ai/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sadiq Ahamed",
+    "info": "Founder  | Growth Protocol ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--153b47296aae2f105296b7a19f8ef97ba8edaeb0/ahamed%201.png",
+    "companyUrl": "https://growthprotocol.xyz/",
+    "twitter": "https://x.com/GrowthProtocol_?s=20",
+    "linkedin": "https://www.linkedin.com/in/sadiqahamed?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BW2VZndpvQRaQvUhVEU7kRQ%3D%3D"
+  },
+  {
+    "name": "Rohit Aggarwal",
+    "info": "Founder | Raga Finance",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5c254f50089cdb47cdc5c9e847641a6d31fa2f26/image.png",
+    "companyUrl": "https://www.raga.finance/",
+    "twitter": "https://x.com/RohitxNexus",
+    "linkedin": "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/"
+  },
+  {
+    "name": "Ashwath Balakrishnan",
+    "info": "Head of Advisory | Delphi Digital",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--21b12a384ed11f45b3c311d1e1c8024b78ea98ae/ashwath%201.png",
+    "companyUrl": "https://delphidigital.io/?utm_medium=social&utm_source=linktree&utm_campaign=market-leading+insights",
+    "twitter": "https://x.com/ashwathbk?s=20",
+    "linkedin": ""
+  },
+  {
+    "name": "Jamie Ek ",
+    "info": "CMO | Bitget Wallet",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbU1DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--47d989c1368191928f333bd496ca68eec0ab7913/image-removebg-preview%201.png",
+    "companyUrl": "https://web3.bitget.com/en",
+    "twitter": "https://x.com/JamieElkaleh1?s=20",
+    "linkedin": ""
+  },
+  {
+    "name": "Mandar Kagade",
+    "info": "Founder Principal | Blackdot Public Policy Advisors",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fd653734760ac055a4838730805656f243d3a426/BALCK%201.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/MandarKagade?s=20",
+    "linkedin": "https://www.linkedin.com/in/mandar-kagade-4a171333/"
+  },
+  {
+    "name": "Vipul Agrawal",
+    "info": "Founder & CEO | Mugafi",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaUlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9b258060e573afc22cd3294d18e3f6194ed749fe/MUGAFI%201.png",
+    "companyUrl": "https://mugafi.com/",
+    "twitter": "https://x.com/iamvipulagrawal",
+    "linkedin": "https://www.linkedin.com/in/iamvipulagrawal/"
+  },
+  {
+    "name": "Shishir Gupta",
+    "info": "Managing Director | Sorted Wallet",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaU1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--556b371644518ff18a07db57d3ac0f597d11a75e/manage%201.png",
+    "companyUrl": "https://www.sorted.io/",
+    "twitter": "https://x.com/ethereumgupta",
+    "linkedin": "https://www.linkedin.com/in/shishrgupta/"
+  },
+  {
+    "name": "Piyush Deshpande",
+    "info": "Growth Lead  | Avantis",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdlVCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--db3ae64f604969355f91650dd1e450020bf7fe17/Piyush%20Deshpande%20%201.png",
+    "companyUrl": "https://www.avantisfi.com/",
+    "twitter": "https://x.com/314yush?s=20",
+    "linkedin": ""
+  },
+  {
+    "name": "Oleg Ogienko",
+    "info": "Director for Regulatory and Overseas Affairs | A7A5",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e31350a7ef0e7954fd03124d465541be9067862b/Photo%201.png",
+    "companyUrl": "https://www.a7a5.io/",
+    "twitter": "https://x.com/a7a5official?s=21&t=ZBybNKtqe10sEGgMYC_28g",
+    "linkedin": "https://www.linkedin.com/company/a7a5/"
+  },
+  {
+    "name": "Dharamveer Singh Chouhan",
+    "info": "Co-Founder and Chairman | Zoworld & Zostel",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b8ca8f790b3381bd6bd3e15a2ca738e04b7a9b40/whoooooo.png",
+    "companyUrl": "https://zo.xyz/",
+    "twitter": "https://x.com/dvcoolster?s=20",
+    "linkedin": "https://www.linkedin.com/in/dvcoolster/"
+  },
+  {
+    "name": "Avishay Litani ",
+    "info": "Account Director / Team Leader | MarketAcross",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b4fcfb0659d3bf5a308bd45d98d5367adab3e977/avishay%20litani%201.png",
+    "companyUrl": "https://marketacross.com/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/avishay-litani-003128a8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZqyBxfjZTziqHTXGzRkGcA%3D%3D"
+  },
+  {
+    "name": "Ronak Jethava",
+    "info": "Head of Ecosystem Growth | Startale Labs / Soneium",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97bf1beb060551ea4619c17901510d57651dac1a/startale%201.png",
+    "companyUrl": "https://startale.com/en",
+    "twitter": "https://x.com/ronaktwts",
+    "linkedin": "https://www.linkedin.com/in/ronak-jethava-6a279a1b3/"
+  },
+  {
+    "name": "Ashish Singhal",
+    "info": "Co-founder | CoinSwitch",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b1eddd13c10de81ed59283441ad8bdac1b790adc/ashsish%201.png",
+    "companyUrl": "https://coinswitch.co/",
+    "twitter": "https://x.com/ashish343?s=21",
+    "linkedin": "https://www.linkedin.com/in/ashish-singhal-peepalco?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    "name": "Ishank Gupta",
+    "info": "Elder Council | KGEN",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbVlDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d0a94790ff8a1e3f95d34fae675e5da2f5bbb84/guptaaa%201.png",
+    "companyUrl": "https://engage.kgen.io/",
+    "twitter": "https://x.com/ishank20?s=20",
+    "linkedin": "https://in.linkedin.com/in/ishankgupta"
+  },
+  {
+    "name": "0xmentalist",
+    "info": "Founder / Mentalist / Unicorn?  | 0xmentalist / Lotry / AWE",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6ad6e7f33cb3e7e83065718fb0dca884fe05ef45/unicorn%201.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/0xMentalist?s=20",
+    "linkedin": ""
+  },
+  {
+    "name": "Manhar Garegrat",
+    "info": "SVP, Country Head, India & Global Partnerships | Liminal Custody",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f8bccee36586cb8186028a3220aafebc2d86cae3/garegat.png",
+    "companyUrl": "https://www.liminalcustody.com/",
+    "twitter": "https://x.com/Garegrat?s=20",
+    "linkedin": "https://www.linkedin.com/in/manhargaregrat?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxhNzkDEAT%2F6b%2BEbXajWoVQ%3D%3D"
+  },
+  {
+    "name": "Rachit Agarwal ",
+    "info": "Head of Global Expansion | Wormhole Foundation",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--01ce25bf86b13228377f0b4d58fef4e4792251b2/rachit%201.png",
+    "companyUrl": "https://wormhole.foundation/",
+    "twitter": "https://x.com/0xagarwal",
+    "linkedin": "https://www.linkedin.com/in/rac-hit/"
+  },
+  {
+    "name": "Tak Lee",
+    "info": "CEO & Managing Partner | Hashed Emergent",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--10184dadd5eadd1e18530765a542f4e0143bbfb3/tak.png",
+    "companyUrl": "https://hashedem.com/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Kashvi Parekh",
+    "info": "Marketing Lead | Boundless",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZzhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--77efa370c3f42306069645d61d80dcfd154e5263/kashvi%201.png",
+    "companyUrl": "https://linktr.ee/boundless_network",
+    "twitter": "https://x.com/kashvii?s=20",
+    "linkedin": "https://www.linkedin.com/in/kashviparekh/"
+  },
+  {
+    "name": "Shashank Chauhan",
+    "info": "DevRel Manager  | TON Foundation",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaDhCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--83a01faf594b875d4d3896fb1f474cf8fa8473fe/TON%201.png",
+    "companyUrl": "https://ton.foundation/en",
+    "twitter": "https://x.com/sha_onchain?t=irCbnkZqOOV3yDWCpy5uAA&s=09",
+    "linkedin": "https://www.linkedin.com/in/shasha1709/"
+  },
+  {
+    "name": "Irshad Ahmed",
+    "info": "Vice President, Platform | Hashed Emergent",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcGdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0b7a8014470de65630db88d72b9d4c0cd50f768a/irshad.png",
+    "companyUrl": "https://hashedem.com/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sharanya Sahai",
+    "info": "Vice President, Investment | Hashed Emergent",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcDBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8fa371d3d465d07866d02a8a956edd965b1fa2ef/sharanya.png",
+    "companyUrl": "https://hashedem.com/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sumer Malhotra",
+    "info": "CEO | Fireplace",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1157c29b5ba22d6f19a68438e8fadcba621d14ff/jdichdiusciducidsucj-removebg-preview.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/buuxbt",
+    "linkedin": "https://www.linkedin.com/in/sumermalhotra/"
+  },
+  {
+    "name": "Rajesh Sabari",
+    "info": "Chief Commercial Officer | Liminal Custody",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a66dd9f3d3dc5b8b1bb2a02eec57591ec6ea7bbe/yoyouoo%201.png",
+    "companyUrl": "https://www.liminalcustody.com/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/rajeshsabari?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+  },
+  {
+    "name": "Nitin Sharma",
+    "info": "Founding Partner | Antler India",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXNDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75590cceb2c90fd644bada33da56eb32ba5432d5/nitinnn.png",
+    "companyUrl": "https://www.antler.co/residency/india",
+    "twitter": "https://x.com/nitinsharma1",
+    "linkedin": "https://www.linkedin.com/in/nitinsharma15/"
+  },
+  {
+    "name": "Sachin Marya",
+    "info": "Editorial Director | Entrepreneur India & APAC",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbXdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bb2517a78adcfd06de4e41613dd335ead1cb7037/'''''''''1.png",
+    "companyUrl": "https://www.entrepreneur.com/en-in",
+    "twitter": "https://x.com/sachinmarya?s=11&t=F7Z-Zqx34u8x_7Rv9Xldpw",
+    "linkedin": "https://www.linkedin.com/in/smarya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    "name": "Akshay Thakur",
+    "info": "Director of Product Management | BitGo",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--23b8a665122595478420d8bba2260887d7e082bd/thakurrr.png",
+    "companyUrl": "https://www.bitgo.com/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/akshay-thakur-b7664460?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBo8GI6ubS3yOj4nhXff2lQ%3D%3D"
+  },
+  {
+    "name": "Xinya Tan ",
+    "info": "Deputy General Counsel | BitGo",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbW9CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e596c317daa7e73375891498557d31b84afb0115/tannnn.png",
+    "companyUrl": "https://www.bitgo.com/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/xinya-tan/"
+  },
+  {
+    "name": "Aritra",
+    "info": "COO | ANQ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbTRCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--743f11518266ef6e6ceab2f4a523deb3f7600318/btccc.png",
+    "companyUrl": "https://anquantum.com/",
+    "twitter": "https://x.com/Aritra_7",
+    "linkedin": "https://www.linkedin.com/in/aritra-007/"
+  },
+  {
+    "name": "Preetam Rao",
+    "info": "CEO | QuillAudits ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbThCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--89e6287f27cd7b1db5cad1ebfdcbfc5f8b4041f4/PREETAM.png",
+    "companyUrl": "https://www.quillaudits.com/",
+    "twitter": "https://x.com/raopreetam_?s=20",
+    "linkedin": "https://www.linkedin.com/in/raopreetam"
+  },
+  {
+    "name": "Pratik Magar",
+    "info": "Partner | Levitate Labs ",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2tCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c852c5003302b8cbf262eab5eb4969a9f1a017a/bruuhhhh.png",
+    "companyUrl": "https://www.levitatelabs.xyz/",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Vidisha Mukherjee",
+    "info": "Associate Director - Legal | CoinSwitch",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb01CIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--de859e782bcd98b2304de5c22067a2cb865b4c5c/vidisha.png",
+    "companyUrl": "https://coinswitch.co/",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/vidisha-mukherjee-310050130/"
+  },
+  {
+    "name": "Tanuj Behl",
+    "info": "Co-Founder | Yodl",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1FCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7cd9468f4fae21585ea9b1f66cc752cfce1f7f6e/m&m.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/tanujbehl",
+    "linkedin": ""
+  },
+  {
+    "name": "Aditya Singh",
+    "info": "Co-Founder | Crypto India",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb3NDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f27bb06ee06343d1ee6f42b9e0326ac0314afe76/aditya%20singh.png",
+    "companyUrl": "",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Sitashwa Srivastava",
+    "info": "Founder & CEO | Borderless",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1lCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ec94d1ee5159e291983b5ba8de0013513c1fa960/whoisthis.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/Sitashwa?s=20",
+    "linkedin": "https://www.linkedin.com/in/sitashwa/"
+  },
+  {
+    "name": "Parth Chaturvedi",
+    "info": "Director | Canton Foundation",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2NDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1cd15016c661f47baaed40384bc8e23a23788c41/parth.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/Parth4vedi",
+    "linkedin": "https://www.linkedin.com/in/parth-chaturvedi-a672165a/"
+  },
+  {
+    "name": "Edul Patel ",
+    "info": "CEO | Mudrex",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb2dCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a748431d42e93e21f9ff864f40d7a50e7db9c170/mudrex.png",
+    "companyUrl": "",
+    "twitter": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Kunal Gandhi",
+    "info": "CMO | HeyElsa AI",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbzBDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c851af6628db3c88236ac44ebd502cafea061910/kunal%20gandhi%201%20(1).png",
+    "companyUrl": "https://www.heyelsa.ai/",
+    "twitter": "https://x.com/kunalvg?s=20",
+    "linkedin": "https://www.linkedin.com/in/kunalvgandhi/"
+  },
+  {
+    "name": "Gnana Lakshmi T C ",
+    "info": "Ecosystem Director | Starknet Foundation",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFFCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--5f2d0d3a2a3967da9ec0f8ed5d0cb8c4f119dade/gyan%201.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/gyanlakshmi?s=20",
+    "linkedin": ""
+  },
+  {
+    "name": "Surbhi Singh",
+    "info": "Co-Founder | Fliq by EthosX",
+    "imageUrl": "https://indiablockchainweek.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVlCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--940d8f796ebc95b38ab45359eb5745e0c9d0fca3/surubhibarar%201.png",
+    "companyUrl": "",
+    "twitter": "https://x.com/surbhibarar?s=20",
+    "linkedin": "https://www.linkedin.com/in/surbhibsingh/"
+  }
+]

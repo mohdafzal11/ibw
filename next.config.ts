@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   experimental: {
     // Enable if needed for your deployment
   },
+  // Configure images and external resources
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.public.blob.vercel-storage.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
