@@ -13,14 +13,15 @@ import PastSponsors from '@/components/sections/PastSponsors'
 import ApplyForIBW25 from '@/components/sections/ApplyForIBW25'
 import FAQ from '@/components/sections/FAQ'
 import { prisma } from '@/lib/prisma'
+import { headers } from 'next/headers'
 
 export const dynamic = 'force-dynamic'
 // Ensure this page runs on Node.js runtime (not edge) since Prisma requires Node.js
 export const runtime = 'nodejs'
 
 export default async function Home() {
-  // Fetch all data in parallel using direct Prisma queries
-  // This is the correct pattern for Server Components in Next.js
+  // Fetch all data in parallel - using API for speakers, direct Prisma for others
+  // TODO: In future, can change to use API endpoints for all data
   let speakers_2025: any[] = []
   let past_speakers: any[] = []
   let sponsers: any = {}
@@ -30,32 +31,27 @@ export default async function Home() {
   try {
     const yearValue = 3 // 2025
     
-    // Fetch all data in parallel using direct database queries
-    const [speakersData, pastSpeakersData, sponsorsData, partnersData, activationsData] = await Promise.all([
-      // Current year speakers (not past speakers, not for demoday)
-      prisma.speaker.findMany({
-        where: {
-          year: yearValue,
-          pastSpeaker: false,
-          addToDemodayPage: false
-        },
-        orderBy: [
-          { order: 'asc' },
-          { createdAt: 'asc' }
-        ]
-      }),
-      // Past speakers
-      prisma.speaker.findMany({
-        where: {
-          year: yearValue,
-          pastSpeaker: true
-        },
-        orderBy: [
-          { order: 'asc' },
-          { createdAt: 'asc' }
-        ]
-      }),
-      // Sponsors
+    // Fetch speakers from API endpoint
+    // Get base URL from headers or environment variable
+    const headersList = await headers()
+    const host = headersList.get('host') || 'localhost:3000'
+    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || `${protocol}://${host}`
+    
+    const [speakersResponse, pastSpeakersResponse, sponsorsData, partnersData, activationsData] = await Promise.all([
+      // Current year speakers (not past speakers, not for demoday) - using API
+      fetch(`${baseUrl}/api/speakers?year=2025&past_speaker=false&add_to_demoday=false`, {
+        cache: 'no-store'
+      })
+        .then(res => res.ok ? res.json() : [])
+        .catch(() => []),
+      // Past speakers - using API
+      fetch(`${baseUrl}/api/speakers?year=2025&past_speaker=true`, {
+        cache: 'no-store'
+      })
+        .then(res => res.ok ? res.json() : [])
+        .catch(() => []),
+      // Sponsors - still using direct Prisma (can change to API later)
       prisma.sponser.findMany({
         where: {
           year: yearValue
@@ -65,7 +61,7 @@ export default async function Home() {
           { createdAt: 'asc' }
         ]
       }),
-      // Partners
+      // Partners - still using direct Prisma (can change to API later)
       prisma.partner.findMany({
         where: {
           year: yearValue
@@ -75,7 +71,7 @@ export default async function Home() {
           { createdAt: 'asc' }
         ]
       }),
-      // Activations
+      // Activations - still using direct Prisma (can change to API later)
       prisma.activation.findMany({
         where: {
           year: yearValue
@@ -90,8 +86,8 @@ export default async function Home() {
       })
     ])
 
-    speakers_2025 = speakersData || []
-    past_speakers = pastSpeakersData || []
+    speakers_2025 = Array.isArray(speakersResponse) ? speakersResponse : []
+    past_speakers = Array.isArray(pastSpeakersResponse) ? pastSpeakersResponse : []
     
     // Group sponsors by category (0: title, 1: platinum, 2: gold, 3: silver)
     sponsers = {
